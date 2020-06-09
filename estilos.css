@@ -120,3 +120,11 @@ footer{
 	text-decoration: underline;
 	text-align: center;
 }
+
+.links{
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	color: blue;
+	background-color: white;
+}
