@@ -1,0 +1,26 @@
+{
+  "name": "zonagamer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/prueba.scss css/prueba.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonzalosalerno/clasegithub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gonzalosalerno/clasegithub/issues"
+  },
+  "homepage": "https://github.com/gonzalosalerno/clasegithub#readme",
+  "description": ""
+}
