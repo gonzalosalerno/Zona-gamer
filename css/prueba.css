@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box; }
 
 .btn-rojo {
@@ -46,7 +48,9 @@
 body {
   font-family: montserrat;
   line-height: 1.5;
-  align-items: center; }
+  background-color: #F7F7F7;
+  align-items: center;
+  box-sizing: border-box; }
 
 .pindex {
   font-family: lora;
@@ -55,12 +59,14 @@ body {
   margin: 25px;
   text-align: center; }
 
-h2 {
+h2 h1{
   font-family: lora; }
 
 .contenedor {
-  width: 1100px;
-  margin: auto; }
+  width: 80%;
+  max-width: 1100px;
+  margin:0 auto;
+ }
 
 .menu {
   background-color: black;
@@ -68,8 +74,9 @@ h2 {
   padding: 10px;
   text-transform: uppercase;
   justify-content: space-around;
-  text-decoration: none; }
-  .menu a {
+  text-decoration: none;
+  width: 100%; }
+  .menu div a {
     text-decoration: none;
     color: white;
     font-size: 1rem;
@@ -78,10 +85,11 @@ h2 {
   ; }
 
 .fotos {
-  display: flex; }
+  display: flex;
+   }
   .fotos img {
-    flex-basis: 100%;
-    height: 200px; }
+    height: auto;
+    width: 100%; }
 
 .slogan {
   margin-top: 0px;
@@ -91,48 +99,14 @@ h2 {
   color: #E9E9E9;
   font-family: lora; }
 
-.nuestros-productos {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-  text-align: center;
-  width: 100%; }
-  .nuestros-productos div {
-    display: flex; }
-  .nuestros-productos img, .nuestros-productos h3 {
-    margin-bottom: 25px; }
-  .nuestros-productos p {
-    padding-top: 0px;
-    margin-top: 0px;
-    letter-spacing: .5px;
-    font-family: lora; }
-
-.submenu {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  background-color: #212121; }
-  .submenu a {
-    color: white;
-    text-decoration: none; }
-  .submenu :hover a {
-    transition: 1000ms;
-    color: red; }
-
-.subtitulo {
-  background-color: #212121;
-  color: white;
-  margin-top: 5px;
-  text-align: center; }
-
 .grilla {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 520px 520px; }
+  grid-template-rows: 100px 520px 520px;
+  width: 100%; }
   .grilla div {
+    width: auto;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -150,31 +124,67 @@ h2 {
   .grilla div:nth-child(6) {
     display: block; }
   .grilla div:nth-child(7) {
+    display: block; }    
+  .grilla div:nth-child(8) {
+    grid-column: 1/4; }
+  .grilla div:nth-child(9) {
     display: block; }
+  .grilla div:nth-child(10) {
+    display: block; }
+  .grilla div:nth-child(11) {
+    display: block; }
+  .grilla div:nth-child(12) {
+    display: block; }
+  .grilla div:nth-child(13) {
+    display: block; }
+  .grilla div:nth-child(14) {
+    display: block; } 
+
+.grilla div a {
+  display: grid;
+  margin-top: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;}
+  .grilla :hover a {
+  transition: 1000ms;
+  text-decoration: underline; }
+  .grilla h2 {
+    align-items: center;
+  }
 
 .imagen {
-  width: 200px;
+  width: 280px;
   height: 200px; }
 
 .imagen-media {
-  width: 250px;
+  width: 300px;
   height: 200px; }
 
 .imagen-grande {
   width: 300px;
-  height: 250px; }
+  height: 200px; }
 
 .imagen250 {
   width: 250px;
-  height: 250px; }
+  height: 200px; }
 
 .imagen-chica {
-  width: 200px;
+  width: 280px;
   height: 250px; }
 
 .imagen-musica {
-  width: 300px;
+  width: 350px;
   height: 200px; }
+
+  .imagen-musica2 {
+    width: 300px;
+    height: 200px; }
+
+.imagen-teclado{
+  width: 300px;
+  height: 250px;
+}
 
 .contacto {
   align-items: center; }
@@ -201,15 +211,74 @@ h2 {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  width: auto;
   text-align: center;
   margin-top: 30px;
   background-image: linear-gradient(to bottom, gray, black); }
 
-  @media screen and (max-width 575px){
-    .contenedor .grilla div {
-      grid-column: 1/3;
-    }
-
-    .contenedor .menu
+.tarjeta {
+    border: 0;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    color: rgba(0,0,0,.87);
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    overflow: hidden;
+    transition: .3s ease all;
+    margin-left: 15px;
   }
+
+.tarjeta:hover{
+  transition: 100ms;
+  -webkit-box-shadow: 0px 1px 20px 1px rgba(0,0,0,0.81);
+  -moz-box-shadow: 0px 1px 20px 1px rgba(0,0,0,0.81);
+  box-shadow: 0px 1px 20px 1px rgba(0,0,0,0.81);
+}
+
+.imagenes{
+  padding-left: 60px;
+}
+
+.imagenes2{
+  padding-left: 40px;
+  width: 100%;
+}
+
+.social{
+  position: fixed;
+  left: 0;
+  top: 40%;
+  z-index: 2000;
+}
+.social ul{
+  list-style: none;
+}
+.social ul li a{
+  display: inline-block;
+  color: #fff;
+  background-color: #000;
+  padding: 10px 15px;
+  text-decoration: none;
+  -webkit-animation: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.social ul li .icon-mail4 {background: #d95232;}
+.social ul li .icon-facebook2 {background: #3b5995;}
+.social ul li .icon-twitter {background: #00abf0;}
+.social ul li .icon-instagram {background: #AB1A65;}
+.social ul li a:hover{
+  padding: 10px 30px;
+  background: black;
+}
+
+.gona{
+  max-width: 33.3333%;
+}
+@media screen and (max-width:800px ){
+  div header nav{
+    background-color: red;
+    color: blue;
+  }
+}
